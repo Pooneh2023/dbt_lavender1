@@ -4,4 +4,4 @@ WITH airports_regions_join AS (
         LEFT JOIN {{source('flights_data', 'regions')}}
         USING (country)
     )
-    SELECT * FROM airports_regions_join
+SELECT * FROM airports_regions_join
