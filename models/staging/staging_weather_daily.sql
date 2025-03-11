@@ -1,4 +1,3 @@
-
 WITH daily_raw AS (
     SELECT
             airport_code,
@@ -24,4 +23,3 @@ daily_flattened AS (
 )
 SELECT * 
 FROM daily_flattened
-
