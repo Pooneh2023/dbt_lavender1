@@ -22,7 +22,7 @@ SELECT o.city AS origin_city
 	   ,d.country AS dest_country
 	   ,*
 FROM flight_route_stats f
-LEFT JOIN {{ref('PREP_FLIGHTS')}} o
+LEFT JOIN {{ref('PREP_airports')}} o
 ON f.origin=o.faa
-LEFT JOIN {{ref('PREP_FLIGHTS')}} d
+LEFT JOIN {{ref('PREp_airports')}} d
 ON f.dest=d.faa;
